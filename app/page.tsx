@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { FrameGraphModal } from "./FrameGraphModal";
 
 type RobotState = {
@@ -78,7 +79,10 @@ export default function Home() {
           <p className="eyebrow">SeismoGuard-R</p>
           <h1>Computer Dashboard</h1>
         </div>
-        <span className={`status ${status === "Live" ? "live" : ""}`}>{status}</span>
+        <div className="header-actions">
+          <Link className="nav-link" href="/credits">Credits</Link>
+          <span className={`status ${status === "Live" ? "live" : ""}`}>{status}</span>
+        </div>
       </header>
 
       <section className="connection">

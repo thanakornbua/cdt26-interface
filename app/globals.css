@@ -1,7 +1,7 @@
 :root {
   background: #0f141b;
   color: #eef3f8;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
 }
 
 * {
@@ -178,9 +178,75 @@ button.graph:hover {
 
 pre {
   color: #d7e0ea;
+  font-family: "JetBrains Mono", "IBM Plex Sans", monospace;
   margin: 0;
   overflow-x: auto;
   white-space: pre-wrap;
+}
+
+code {
+  font-family: "JetBrains Mono", "IBM Plex Sans", monospace;
+}
+
+.header-actions {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  border: 1px solid #334155;
+  border-radius: 999px;
+  color: #dbeafe;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #1e293b;
+}
+
+.credits header {
+  align-items: flex-start;
+}
+
+.subtitle {
+  color: #b0c2db;
+  font-size: 14px;
+  margin: 6px 0 0;
+  max-width: 560px;
+}
+
+.credit-card {
+  background: #171e29;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.credit-card + .credit-card {
+  margin-top: 14px;
+}
+
+.credit-card p {
+  color: #c2d0e1;
+  margin: 0;
+}
+
+.credit-list {
+  color: #d7e0ea;
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.credit-list li {
+  margin-bottom: 6px;
+}
+
+.credit-list li:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 640px) {
