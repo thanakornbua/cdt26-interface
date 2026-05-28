@@ -9,7 +9,7 @@ export default function CreditsPage() {
           <h1>Credits</h1>
           <p className="subtitle">
             This project was created for Coding Thailand 2026: AI Inspires the Future: Regional
-            Coding and Ai Competition (Regional Round).
+            Coding and AI Competition (Regional Round).
           </p>
         </div>
         <Link className="nav-link" href="/">Back to Dashboard</Link>
